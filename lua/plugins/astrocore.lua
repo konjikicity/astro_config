@@ -8,6 +8,30 @@ return {
   "AstroNvim/astrocore",
   ---@type AstroCoreOpts
   opts = {
+    treesitter = {
+      ensure_installed = {
+        "bash",
+        "blade",
+        "css",
+        "dockerfile",
+        "html",
+        "javascript",
+        "json",
+        "lua",
+        "markdown",
+        "php",
+        "python",
+        "ruby",
+        "scss",
+        "toml",
+        "tsx",
+        "twig",
+        "typescript",
+        "vim",
+        "vue",
+        "yaml",
+      },
+    },
     -- Configure core features of AstroNvim
     features = {
       large_buf = { size = 1024 * 256, lines = 10000 }, -- set global limits for large files for disabling features like treesitter
