@@ -1,16 +1,5 @@
--- We import this file in `lazy_setup.lua` before the `plugins/` folder.
--- This guarantees that the specs are processed before any user plugins.
+-- astrocommunity imports are consolidated in `lua/community.lua`.
+-- This file is intentionally left as an empty spec to avoid duplicate imports.
 
 ---@type LazySpec
-return {
-  "AstroNvim/astrocommunity",
-  { import = "astrocommunity.recipes.heirline-vscode-winbar" },
-  { import = "astrocommunity.recipes.vscode-icons" },
-  { import = "astrocommunity.colorscheme.tokyonight-nvim" },
-  { import = "astrocommunity.colorscheme.sonokai" },
-  { import = "astrocommunity.git.git-blame-nvim" },
-  { import = "astrocommunity.git.neogit" },
-  { import = "astrocommunity.utility.noice-nvim" },
-
-  -- import/override with your plugins folder
-}
+return {}

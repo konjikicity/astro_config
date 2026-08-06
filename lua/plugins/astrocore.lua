@@ -9,26 +9,20 @@ return {
   ---@type AstroCoreOpts
   opts = {
     treesitter = {
+      -- parsers covered by astrocommunity packs (php/laravel/vue/typescript/python/ruby)
+      -- are installed by those packs; only list the rest here.
       ensure_installed = {
         "bash",
-        "blade",
         "css",
         "dockerfile",
         "html",
-        "javascript",
         "json",
         "lua",
         "markdown",
-        "php",
-        "python",
-        "ruby",
         "scss",
         "toml",
-        "tsx",
         "twig",
-        "typescript",
         "vim",
-        "vue",
         "yaml",
       },
     },
