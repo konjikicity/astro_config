@@ -40,19 +40,6 @@ return {
       virtual_text = true,
       underline = true,
     },
-    -- passed to `vim.filetype.add`
-    filetypes = {
-      -- see `:h vim.filetype.add` for usage
-      extension = {
-        foo = "fooscript",
-      },
-      filename = {
-        [".foorc"] = "fooscript",
-      },
-      pattern = {
-        [".*/etc/foo/.*"] = "fooscript",
-      },
-    },
     -- vim options can be configured here
     options = {
       opt = { -- vim.opt.<key>
@@ -76,17 +63,6 @@ return {
         -- second key is the lefthand side of the map
         -- mappings seen under group name "Buffer"
         ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
-        ["<leader>bD"] = {
-          function()
-            require("astronvim.utils.status").heirline.buffer_picker(
-              function(bufnr) require("astronvim.utils.buffer").close(bufnr) end
-            )
-          end,
-          desc = "Pick to close",
-        },
-        -- this is useful for naming menus
-        ["<leader>b"] = { name = "Buffers" },
-
         -- quick save
         ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
 
