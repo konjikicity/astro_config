@@ -22,6 +22,7 @@ return {
           row = "50%", -- 画面の縦方向中央
           col = "50%", -- 画面の横方向中央
         },
+        border = { style = "rounded" },
         size = {
           width = "auto",
           height = "auto",
